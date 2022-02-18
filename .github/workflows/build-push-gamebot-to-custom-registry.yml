@@ -13,10 +13,10 @@ on:
     branches-ignore:
       - '**'
     
-    #branches: [ master ]
-    #paths:
-    #  - GameBot/**
-    #  - .github/workflows/build-push-gamebot.yml
+    branches: [ master ]
+    paths:
+     - GameBot/**
+     - .github/workflows/build-push-gamebot.yml
    
 defaults:
   run:
@@ -38,5 +38,5 @@ jobs:
     # build the docker image
     - name: build and push    
       run: |
-        az acr build --image "gamebot:latest" --registry myContainerRegistry --file Dockerfile .
+        az acr build --image "gamebot:latest" --registry fant4acrcf3bc5 --file Dockerfile .
 
