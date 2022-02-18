@@ -20,6 +20,11 @@ const pick = async (req, res) => {
     //    result.text = "rock";
     // }
 
+     if (player1Name == "Brain" && turn == 0) {
+        strategyOption = "CUSTOM";
+        result.text = "paper";
+     }
+
     console.log('Against ' + player1Name + ', strategy ' + strategyOption + '  played ' + result.text);
 
     const applicationInsightsIK = process.env.APPINSIGHTS_INSTRUMENTATIONKEY;
