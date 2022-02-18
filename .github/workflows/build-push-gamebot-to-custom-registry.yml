@@ -14,9 +14,9 @@ on:
 #       - '**'
     
     branches: [ master ]
-    paths:
-     - GameBot/**
-     - .github/workflows/build-push-gamebot.yml
+#     paths:
+#      - GameBot/**
+#      - .github/workflows/build-push-gamebot.yml
    
 defaults:
   run:
